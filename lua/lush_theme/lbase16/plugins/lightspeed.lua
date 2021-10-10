@@ -2,7 +2,7 @@ local lush = require "lush"
 local lbase = require "lbase"
 
 -- Highlights for lightspeed.nvim
--- For help see the `:h lightspeed-highlight`
+-- For help see `:h lightspeed-highlight`
 -- stylua: ignore
 local function theme()
     return function()
@@ -15,8 +15,8 @@ local function theme()
             LightspeedShortcut               { fg = base08},
             LightspeedShortcutOverlapped     { LightspeedShortcut, special = "underline"  },
             LightspeedGreyWash               { fg = base03 },
-            LightspeedMaskedChar             { fg = base04 },
-            LightspeedUnlabeledMatch         { fg = base09 },
+            LightspeedMaskedChar             { fg = base0A },
+            LightspeedUnlabeledMatch         { fg = base08 },
             LightspeedOneCharMatch           { fg = base00, bg = base0A},
             LightspeedUniqueChar             { LightspeedUnlabeledMatch, special = "underline"  },
             LightspeedPendingOpArea          { bg = base02},
