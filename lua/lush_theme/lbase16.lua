@@ -1,7 +1,10 @@
 local lush = require "lush"
 
 -- Get all lua files located under the lush colorscheme
-local files = vim.api.nvim_get_runtime_file("lua/lush_theme/lbase16/*", true)
+local files = vim.api.nvim_get_runtime_file(
+    "lua/lush_theme/lbase16/**/*.lua",
+    true
+)
 
 local theme = lush.parse(function()
     return {}
