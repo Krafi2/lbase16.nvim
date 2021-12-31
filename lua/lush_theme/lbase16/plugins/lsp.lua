@@ -8,17 +8,17 @@ local function theme()
     return function()
         lbase.inject_palette()
         return {
-            LspReferenceText                   { gui = "undercurl", sp = base0C },
-            LspReferenceRead                   { gui = "undercurl", sp = base0C },
-            LspReferenceWrite                  { gui = "undercurl", sp = base0C },
-            LspDiagnosticsDefaultError         { fg  = base0F },
-            LspDiagnosticsDefaultWarning       { fg  = base09 },
-            LspDiagnosticsDefaultInformation   { fg  = base05 },
-            LspDiagnosticsDefaultHint          { fg  = base0C },
-            LspDiagnosticsUnderlineError       { gui = "undercurl", sp = base0F },
-            LspDiagnosticsUnderlineWarning     { gui = "undercurl", sp = base09 },
-            LspDiagnosticsUnderlineInformation { gui = "undercurl", sp = base05 },
-            LspDiagnosticsUnderlineHint        { gui = "undercurl", sp = base0C },
+            LspReferenceText         { gui = "undercurl", sp = base0C },
+            LspReferenceRead         { gui = "undercurl", sp = base0C },
+            LspReferenceWrite        { gui = "undercurl", sp = base0C },
+            DiagnosticError          { fg  = base0F },
+            DiagnosticWarn           { fg  = base09 },
+            DiagnosticInfo           { fg  = base05 },
+            DiagnosticHint           { fg  = base0C },
+            DiagnosticUnderlineError { gui = "undercurl", sp = base0F },
+            DiagnosticUnderlineWarn  { gui = "undercurl", sp = base09 },
+            DiagnosticUnderlineInfo  { gui = "undercurl", sp = base05 },
+            DiagnosticUnderlineHint  { gui = "undercurl", sp = base0C },
         }
     end
 end
